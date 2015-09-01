@@ -7,7 +7,6 @@ import static org.junit.Assert.assertTrue;
 public class InvertWordsTest {
 
     InvertWord invertWord;
-
     @Before
     public void setUp() throws Exception {
         invertWord = new InvertWord();
