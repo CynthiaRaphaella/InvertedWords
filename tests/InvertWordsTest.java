@@ -25,6 +25,13 @@ public class InvertWordsTest {
     public void shouldReturnTheSameWhenIsJustOneWord() {
         String phrase = "Word";
         String inertedPhrase = invertWord.revert(phrase);
-        assertTrue(phrase.equals(inertedPhrase));
+        assertTrue("Word ".equals(inertedPhrase));
+    }
+
+    @Test
+    public void shouldWordInvertWhenInvertWord() {
+        String phrase = "Invert Word";
+        String inertedPhrase = invertWord.revert(phrase);
+        assertTrue("Word Invert ".equals(inertedPhrase));
     }
 }
